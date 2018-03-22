@@ -1,0 +1,147 @@
+$color1: rgba(231, 232, 225, 1);
+$color2: rgba(150, 200, 204, 1);
+$color3: rgba(79, 123, 132, 1);
+$color4: rgba(221, 133, 137, 1);
+$color5: rgba(191, 78, 106, 1);
+
+* {
+box-sizing: border-box;
+}
+
+html, body {
+margin: 0 auto;
+padding: 0;
+border: 0px;
+line-height: 1.5;
+}
+
+h1, p {
+margin-top: 0;
+margin-bottom: 0.5rem;
+}
+
+.top-width {
+width: 100%;
+}
+
+.nav-container {
+position: fixed;
+z-index: 1000;
+top: 0px;
+background-color: rgba(212, 212, 212, 0.8);
+width: 100%;
+}
+
+.nav-ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+.nav-ul li {
+float: right;
+}
+
+.nav-ul a {
+display: block;
+color: black;
+text-align: center;
+padding: 0.7rem;
+text-decoration: none;
+}
+
+.active {
+background-color: #4CAF50;
+}
+
+.main-part {
+display: flex;
+flex-direction: column;
+}
+
+.part-div {
+padding: 0.5rem;
+}
+
+.welcome {
+padding: 0;
+background: url("welcome.jpeg") no-repeat center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+width: 100%;
+}
+
+.welcome-text {
+position: relative;
+text-align: center;
+top: 50%;
+color: white;
+}
+
+.about-co {
+
+}
+
+.offer {
+
+}
+
+.prices {
+
+}
+
+.partners {
+
+}
+
+.global-width {
+width: 100%;
+margin-right: auto;
+margin-left: auto;
+}
+
+@media (max-width: 366px) {
+.nav-ul a {
+font-size: 0.8rem;
+padding: 0.5rem;
+}
+}
+
+@media (max-width: 576px) {
+.welcome {
+height: 400px;
+}
+.nav-ul {
+float: left;
+justify-content: center;
+}
+}
+
+@media (min-width: 576px) {
+.welcome {
+height: 400px;
+}
+}
+
+@media (min-width: 768px) {
+.welcome {
+height: 700px;
+}
+}
+
+@media (min-width: 992px) {
+.global-width {
+max-width: 992px;
+}
+.welcome {
+height: 800px;
+}
+}
+
+@media (min-width: 1200px) {
+.global-width {
+max-width: 1140px;
+}
+}
