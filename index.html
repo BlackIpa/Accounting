@@ -7,6 +7,7 @@
 <!-- Bootstrap CSS
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 <title>Responsive Test</title>
 </head>
@@ -15,11 +16,11 @@
 <nav class="nav-container">
 <div class="global-width nav-bar">
 <ul class="nav-ul">
-<li class="nav-li"><a href="#">O firmie</a></li>
-<li class="nav-li"><a href="#">Oferta</a></li>
-<li class="nav-li"><a href="#">Cennik</a></li>
-<li class="nav-li"><a href="#">Partnerzy</a></li>
-<li class="nav-li"><a class="active" href="#">Kontakt</a></li>
+<li class="nav-li"><a class="nav-a" href="#about-co">O firmie</a></li>
+<li class="nav-li"><a class="nav-a" href="#offer">Oferta</a></li>
+<li class="nav-li"><a class="nav-a" href="#prices">Cennik</a></li>
+<li class="nav-li"><a class="nav-a" href="#partners">Partnerzy</a></li>
+<li class="nav-li"><a class="nav-a" href="#contact">Kontakt</a></li>
 </ul>
 </div>
 </nav>
@@ -30,20 +31,29 @@
 </div>
 </div>
 <div class="global-width main-part">
-<div class="part-div about-co">
+<div id="about-co" class="part-div">
 <h1>O FIRMIE</h1>
-<p>Oferujemy fachowe i kompetentne pod względem merytorycznym i formalnym prowadzenie ksiąg rachunkowych i ewidencji podatkowych. Realizujemy zadania zgodnie z aktualnie obowiązującymi przepisami prawa, orzecznictwem sądowym oraz interpretacjami organów podatkowych. Oferujemy pomoc przy optymalnym wyborze formy rozliczeń podatkowych oraz doradzamy w bieżącym prowadzeniu firmy. Posiadamy certyfikat księgowy uprawniający do prowadzenia działalności usługowej w zakresie prowadzenia ksiąg rachunkowych oraz ponad 20-sto letnią praktykę w służbach finansowo-księgowych. Dzięki temu masz pewność rzetelnego i profesjonalnego prowadzenia Twoich ksiąg rachunkowych.</p>
-<p>Ponadto oferujemy reprezentowanie Państwa Firmy w kontaktach z organami podatkowymi oraz ZUS. W realizacji naszych zadań ściśle współpracujemy z ekspertami w zakresie:</p>
+<p>Oferujemy fachowe i kompetentne pod względem merytorycznym i formalnym prowadzenie ksiąg rachunkowych i ewidencji podatkowych.
+Realizujemy zadania zgodnie z aktualnie obowiązującymi przepisami prawa, orzecznictwem sądowym oraz interpretacjami organów podatkowych.
+Oferujemy pomoc przy optymalnym wyborze formy rozliczeń podatkowych oraz doradzamy w bieżącym prowadzeniu firmy.
+Posiadamy certyfikat księgowy uprawniający do prowadzenia działalności usługowej w zakresie prowadzenia ksiąg rachunkowych oraz
+ponad 20-sto letnią praktykę w służbach finansowo-księgowych. Dzięki temu masz pewność rzetelnego i profesjonalnego prowadzenia
+Twoich ksiąg rachunkowych.</p>
+<p>Ponadto oferujemy reprezentowanie Państwa Firmy w kontaktach z organami podatkowymi oraz ZUS. W realizacji naszych zadań ściśle
+współpracujemy z ekspertami w zakresie:</p>
 <ul>
 <li>Pozyskania środków finansowych na prowadzenie działalności</li>
 <li>Biurem nieruchomości</li>
-<li>Dzięki temu Współpraca z nami może nie ograniczać się tylko do powierzenia nam prowadzenia Państwa firmy pod względem rachunkowym, ale także pomagać wielu innych dziedzinach związanych z prowadzeniem działalności gospodarczej. Za naszym pośrednictwem mogą Państwo zaciągnąć kredyt, czy też zainwestować swój kapitał w nieruchomości</li>
+<li>Dzięki temu Współpraca z nami może nie ograniczać się tylko do powierzenia nam prowadzenia Państwa firmy pod względem
+rachunkowym, ale także pomagać wielu innych dziedzinach związanych z prowadzeniem działalności gospodarczej.
+Za naszym pośrednictwem mogą Państwo zaciągnąć kredyt, czy też zainwestować swój kapitał w nieruchomości</li>
 </ul>
 </div>
 
-<div class="part-div offer">
+<div id="offer" class="part-div">
 <h1>OFERTA</h1>
-<p>Proponujemy Państwu wybór najkorzystniejszej formy opodatkowania dostosowanej do charakteru prowadzonej przez Państwa działalności oraz oferujemy:</p>
+<p>Proponujemy Państwu wybór najkorzystniejszej formy opodatkowania dostosowanej do charakteru prowadzonej przez Państwa
+działalności oraz oferujemy:</p>
 <ul>
 <li>prowadzenie podatkowej książki przychodów i rozchodów</li>
 <li>prowadzenie ryczałtu ewidencjonowanego</li>
@@ -63,7 +73,7 @@
 </ul>
 </div>
 
-<div class="part-div prices">
+<div id="prices" class="part-div">
 <h1>CENNIK</h1>
 <p>Cenę ustalamy z każdym klientem indywidualnie poniższe ceny są jedynie poglądowe</p>
 <p>Prowadzenie ewidencji podatkowych:</p>
@@ -79,12 +89,16 @@
 <p>rejestr VAT - 100 zł</p>
 </div>
 
-<div class="part-div partners">
+<div id="partners" class="part-div">
 <h1>NASI PARTNERZY</h1>
-<a href="http://www.nieruchomosci-barczynska.pl">Nieruchomości Barczyński</a>
-<a href="http://platinumsquare.pl">Platinum Square</a>
+<a href="http://www.nieruchomosci-barczynska.pl">
+<img class="partners-logo" src="LOGO-agencja_Barczynska.jpg" title="Nieruchomości Barczyński" alt="Nieruchomości Barczyński">
+</a>
+<a href="http://platinumsquare.pl">
+<img class="partners-logo" src="LOGO-platinum-square.jpg" title="Platinum Square" alt="Platinum Square">
+</a>
 </div>
-<div class="part-div partners">
+<div id="contact" class="part-div">
 <h1>KONTAKT</h1>
 <p>Biuro Rachunkowe E.R.K<br/>.
 NIP: 752-140-54-18<br/>
@@ -92,9 +106,11 @@ REGON:<br/>
 Johanna Straussa 5<br/>
 52-129 Wrocław<br/>
 Tel. 605 417 823 lub 698 497 088<br/>
-mail: rafal.kiedzierski@gmail.com<br/></p>
+mail: rafal.kiedzierski@gmail.com<br/>
+</p>
 </div>
 </div>
+<script src="scripts.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -103,4 +119,3 @@ mail: rafal.kiedzierski@gmail.com<br/></p>
 -->
 </body>
 </html>
-
