@@ -149,12 +149,25 @@ a {
 	top: 50%;
 	color: white;
 }
-#contact {
-	padding-bottom: 5rem;
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;	
 }
-.partners-logo {
-	padding: 2rem;
-	height: 160px;
+
+.flex-item {
+	width: 20rem;
+	margin: 2rem 1rem;
+}
+.about-part p, .about-part li {
+	font-size: 1rem;
+}
+.contact-detals {
+	margin: 5rem 1rem;
+}
+
+.contact-details p {
+	font-size: 1.5rem;
 }
 .contact-form {
 	margin: 0 auto;
@@ -185,6 +198,10 @@ a {
 .contact-form textarea {
 	height: 10rem;
 	resize: vertical;
+}
+.partners-logo {
+	padding: 2rem;
+	height: 160px;
 }
 @media (max-width: 340px) {
 	.nav-ul a {
@@ -221,8 +238,3 @@ a {
 		max-width: 1140px;
 	}
 }
-/* @media (max-width: 680px) {
-    .phone {
-        display: none!;
-    }
-} */
