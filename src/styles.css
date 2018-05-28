@@ -6,6 +6,7 @@ html, body {
 	border: 0px;
 	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 h1, p {	margin: 0; }
 a {
@@ -19,6 +20,7 @@ a {
 }
 .justified-spaces {	justify-content: space-around; }
 .justified-center {	justify-content: center; }
+.text-center { text-align: center; }
 .flex-column {
 	display: flex;
 	flex-direction: column;
@@ -36,7 +38,6 @@ a {
 .about-part {
 	width: 30%;
 	align-items: center;
-	text-align: center;
  	height: 270px;
 }
 .about-part p:nth-child(2) {
@@ -50,8 +51,7 @@ a {
 }
 /* Offer styling*/
 .h1-middle {
-	margin-top: 5em;
-	text-align: center;
+	margin-top: 2.5em;
 }
 .offer-list {
 	counter-reset: item;
@@ -83,24 +83,17 @@ a {
 .prices-info {
 	font-size: 1.5em;
 	font-weight: bold;
-	text-align: center;
-	margin-top: 1rem;
-	margin-bottom: 2rem;	
+	margin: .5em 0 1em 0;	
 }
 #prices .flex-item > p {
-	font-size: 1rem;
-	padding: 0 0 .5rem .5rem;
-}
-#prices2 .flex-item > p {
-	padding: 0 0 .5rem 0;
-	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1em;
+	padding: 0 0 .5em .5em;
 }
 .prices-square {
-	height: 10rem;
-	width: 10rem;
-	font-size: 2.5rem;
-	font-weight: 900;
+	height: 5em;
+	width: 5em;
+	font-size: 2.5em;
+	font-weight: bold;
 	border: 1px solid gray;
 	text-align: center;
 }
@@ -115,17 +108,14 @@ a {
 	font-size: 1.5rem;
 }
 /* Contact part styling */
-.center-text {
-	text-align: center;
-}
 .panorama {
 	padding: 0;
 	background: url("../res/images/panorama.jpg") no-repeat center;
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
 	width: 100%;
 	background-size: cover;
-	margin-bottom: 3rem;
-	height: 300px;
+	margin-bottom: 3em;
+	height: 18.75em;
 }
 .panorama-text {
 	position: relative;
@@ -138,7 +128,7 @@ a {
 	align-self: flex-start;
 }
 .contact-details img {
-	padding-bottom: 1rem;
+	padding-bottom: 1em;
 }
 /* Contact form styling */
 #contact-form form {
@@ -153,24 +143,26 @@ form {
 	color: gray;
 }
 form input {
-	height: 4rem;
+	height: 2em;
 	width: 48%;
-	font-size: 1.5rem;
-	padding: 0 2.5rem;
-	margin-bottom: 1rem;
+	font-size: 1.5em;
+	padding: 0 1.25em;
+	margin-bottom: .5em;
 }
 form textarea {
-	height: 20rem;
+	height: 12em;
 	width: 98%;
-	padding: 1.5rem 2.5rem;
-	font-size: 1.5rem;
-	margin-bottom: 2rem;
+	padding: 1.5em 2.5em;
+	font-size: 1.5em;
+	margin-bottom: 2em;
 }
 form button {
-	height: 2.5rem;
-	width: 12rem;
+	height: 2em;
+	width: 8em;
 	background: white;
 	border: 3px solid black;
-	font: 700 1.5rem 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
 	color: black;
+	padding: 0;
 }
