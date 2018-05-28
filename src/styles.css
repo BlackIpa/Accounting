@@ -1,0 +1,176 @@
+/* Main part global styling */
+* {	box-sizing: border-box; }
+html, body {
+	margin: auto;
+	padding: 0;
+	border: 0px;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+}
+h1, p {	margin: 0; }
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.global-width {
+	width: 100%;
+	max-width: 1140px;
+	margin: auto;
+}
+.justified-spaces {	justify-content: space-around; }
+.justified-center {	justify-content: center; }
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+.viewport-height {
+	min-height: 100vh;
+	margin-bottom: 2em;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+/* About company styling */
+.about-part {
+	width: 30%;
+	align-items: center;
+	text-align: center;
+ 	height: 270px;
+}
+.about-part p:nth-child(2) {
+	font-weight: bold;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.icon-size {
+	width: 7em;
+	height: 7em;
+}
+/* Offer styling*/
+.h1-middle {
+	margin-top: 5em;
+	text-align: center;
+}
+.offer-list {
+	counter-reset: item;
+	padding-left: 0;
+}
+.offer-list li {
+	font-size: 1.3rem;
+	counter-increment: item;
+	list-style-type: none;
+	line-height: 2.3;
+	border-bottom: 1px solid rgb(217, 217, 219);
+}
+/* .offer-list li:nth-child(even) {
+	background: radial-gradient(white 0%, rgb(240, 240, 240) 50%);
+} */
+.offer-list > li:before {
+  content: counter(item, decimal-leading-zero) '.';
+  font-weight: bold;
+	padding-right: .5rem;  
+}
+/* Prices styling*/
+.prices-gray {
+	color: gray;
+}
+.prices-icon {
+	display: block;
+	margin: auto;
+}
+.prices-info {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 2rem;	
+}
+#prices .flex-item > p {
+	font-size: 1rem;
+	padding: 0 0 .5rem .5rem;
+}
+#prices2 .flex-item > p {
+	padding: 0 0 .5rem 0;
+	text-align: center;
+	font-size: 1.2rem;
+}
+.prices-square {
+	height: 10rem;
+	width: 10rem;
+	font-size: 2.5rem;
+	font-weight: 900;
+	border: 1px solid gray;
+	text-align: center;
+}
+.prices-square p {
+	position: relative;
+	float: left;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.prices-square-last {
+	font-size: 1.5rem;
+}
+/* Contact part styling */
+.center-text {
+	text-align: center;
+}
+.panorama {
+	padding: 0;
+	background: url("../res/images/panorama.jpg") no-repeat center;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+	width: 100%;
+	background-size: cover;
+	margin-bottom: 3rem;
+	height: 300px;
+}
+.panorama-text {
+	position: relative;
+	top: 40%;
+}
+.panorama-text p, .panorama-text h1 {
+	color: white;
+}
+.contact-details div {
+	align-self: flex-start;
+}
+.contact-details img {
+	padding-bottom: 1rem;
+}
+/* Contact form styling */
+#contact-form form {
+	margin: auto;
+	margin-top: 2em;
+}
+form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 80%;
+	color: gray;
+}
+form input {
+	height: 4rem;
+	width: 48%;
+	font-size: 1.5rem;
+	padding: 0 2.5rem;
+	margin-bottom: 1rem;
+}
+form textarea {
+	height: 20rem;
+	width: 98%;
+	padding: 1.5rem 2.5rem;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+form button {
+	height: 2.5rem;
+	width: 12rem;
+	background: white;
+	border: 3px solid black;
+	font: 700 1.5rem 'Roboto', sans-serif;
+	color: black;
+}

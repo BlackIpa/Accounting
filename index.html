@@ -3,159 +3,197 @@
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	<!-- Bootstrap CSS
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	-->
-	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="src/styles.css">
+	<link rel="stylesheet" href="src/mediaqueries.css">
+	<link rel="stylesheet" href="src/fixedparts.css">
 <title>Responsive Test</title>
 </head>
 <body>
-<div class="top-width">
+<div class="nav-width">
 	<nav class="nav-container">
-	<div class="global-width nav-bar">
-	<ul class="nav-ul">
-	<li class="nav-li"><a class="nav-a" href="#about-co">O firmie</a></li>
-	<li class="nav-li"><a class="nav-a" href="#offer">Oferta</a></li>
-	<li class="nav-li"><a class="nav-a" href="#prices">Cennik</a></li>
-	<li class="nav-li"><a class="nav-a" href="#contact">Kontakt</a></li>
-	</ul>
-	</div>
+		<div class="global-width nav-bar">
+			<ul class="nav-ul">
+				<li class="nav-li"><a class="nav-a" href="#about-co">O firmie</a></li>
+				<li class="nav-li"><a class="nav-a" href="#offer">Oferta</a></li>
+				<li class="nav-li"><a class="nav-a" href="#prices">Cennik</a></li>
+				<li class="nav-li"><a class="nav-a" href="#contact">Kontakt</a></li>
+			</ul>
+		</div>
 	</nav>
 	<div class="welcome">
-	<div class="welcome-text">
-	<h1>Ms & Mr Bonzo</h1>
-	</div>
+		<div class="welcome-text">
+			<p>BIURO RACHUNKOWE</p>
+			<hr noshade>
+			<p>E.R.K. Rafał Kiedzierski</p>
+		</div>
 	</div>
 </div>
 
 <a href="tel://+1234567890" class="call-us"><i class="fa fa-phone"></i></a>
 <div class="back-to-top"><i class="fa fa-chevron-up"></i></div>
 
-<div class="global-width main-part">
-	<div id="about-co" class="part-div">
-		<h1>O FIRMIE</h1>
-		<div class='flex-container'>
-			<div class='flex-item about-part'>
-				<p>Oferujemy fachowe i kompetentne pod względem merytorycznym i formalnym prowadzenie ksiąg rachunkowych i ewidencji podatkowych.</p>
-			</div>
-			<div class='flex-item about-part'>
-				<p>Realizujemy zadania zgodnie z aktualnie obowiązującymi przepisami prawa, orzecznictwem sądowym oraz interpretacjami organów podatkowych.</p>
-			</div>
-			<div class='flex-item about-part'>
-				<p>Oferujemy pomoc przy optymalnym wyborze formy rozliczeń podatkowych oraz doradzamy w bieżącym prowadzeniu firmy.</p>
-			</div>
-			<div class='flex-item about-part'>
-				<p>Posiadamy certyfikat księgowy uprawniający do prowadzenia działalności usługowej w zakresie prowadzenia ksiąg rachunkowych oraz
-				ponad 20-sto letnią praktykę w służbach finansowo-księgowych.</p>
-			</div>
-			<div class='flex-item about-part'>
-				<p>Dzięki temu masz pewność rzetelnego i profesjonalnego prowadzenia Twoich ksiąg rachunkowych.</p>
-			</div>
-			<div class='flex-item about-part'>
-				<p>Ponadto oferujemy reprezentowanie Państwa Firmy w kontaktach z organami podatkowymi oraz ZUS.</p>
-			</div>
-			<div class='flex-item about-part'>
-				<p>W realizacji naszych zadań ściśle współpracujemy z ekspertami w zakresie:</p>
-				<ul>
-					<li>Pozyskania środków finansowych na prowadzenie działalności</li>
-					<li>Biurem nieruchomości</li>
-				</ul>
-			</div>
-			<div class='flex-item about-part'>
-				<p>Dzięki temu Współpraca z nami może nie ograniczać się tylko do powierzenia nam prowadzenia Państwa firmy pod względem
-				rachunkowym, ale także pomagać wielu innych dziedzinach związanych z prowadzeniem działalności gospodarczej.
-				Za naszym pośrednictwem mogą Państwo zaciągnąć kredyt, czy też zainwestować swój kapitał w nieruchomości</p>
-			</div>
+<div class="global-width flex-column">
+	<div id="about-co" class="viewport-height flex-container justified-spaces">
+		<div class='flex-item flex-column about-part'>
+			<img class='icon-size' src='res/images/handshake.png' alt='Handshake'>
+			<p>20 lat praktyki</p>
+			<p>Usługi finansowo-ksęgowe świadczymy już od ponad 20 lat</p>
 		</div>
-	</div>
-	<div id="offer" class="part-div">
-		<h1>OFERTA</h1>
-		<p>Proponujemy Państwu wybór najkorzystniejszej formy opodatkowania dostosowanej do charakteru prowadzonej przez Państwa
-		działalności oraz oferujemy:</p>
-		<ul>
-			<li>prowadzenie podatkowej książki przychodów i rozchodów</li>
-			<li>prowadzenie ryczałtu ewidencjonowanego</li>
-			<li>prowadzenie karty podatkowej</li>
-			<li>prowadzenie ewidencji podatkowych VAT, w tym wystawianie w imieniu klientów faktur sprzedaży</li>
-			<li>prowadzenie spraw kadrowych</li>
-			<li>sporządzanie list płac</li>
-			<li>sporządzanie deklaracji i zeznań podatkowych</li>
-			<li>prowadzenie rozliczeń z ZUS</li>
-			<li>prowadzenie ewidencji środków trwałych oraz WNiP</li>
-			<li>prowadzenie ewidencji wyposażenia</li>
-			<li>wsparcia e w zakładaniu działalności gospodarczej</li>
-			<li>przegląd należności i zobowiązań</li>
-			<li>reprezentowanie przed urzędami skarbowymi i ZUS</li>
-			<li>rozliczenia PIT</li>
-			<li>Uczestniczenie w kontrolach podatkowych</li>
-		</ul>
-	</div>
-	<div id="prices" class="part-div">
-		<h1>CENNIK</h1>
-		<p>Cenę ustalamy z każdym klientem indywidualnie poniższe ceny są jedynie poglądowe</p>
-		<p>Prowadzenie ewidencji podatkowych:</p>
-		<ul>
-			<li>do 10 dokumentów – 100 zł</li>
-			<li>do 25 dokumentów – 150</li>
-			<li>do 50 dokumentów – 200</li>
-			<li>do 75 dokumentów – 250</li>
-			<li>powyżej 100 – ustalenia indywidualne</li>
-		</ul>
-		<p>Kadry<br/>1 pracownik - 30 zł</p>
-		<p>ryczałt - 100 zł</p>
-		<p>rejestr VAT - 100 zł</p>
-	</div>
-	<div id="contact" class="part-div">
-
-		<h1>KONTAKT</h1>
-		
-		<div class="flex-container contact-detals">
-			<div class='flex-item'>
-				<p><i class="fa fa-map-marker"></i></p>
-				<p>ul. Johanna Straussa 5<br/>
-				52-129 Wrocław</p>
-			</div>
-			<div class='flex-item'>
-				<p><i class="fa fa-envelope"></i></p>
-				<p>rafal.kiedzierski@gmail.com</p>
-			</div>
-			<div class='flex-item'>
-				<p><i class="fa fa-phone-square"></i></p>
-				<p>605 417 823<br/>
-				698 497 088<p>
-			</div>
+		<div class='flex-item flex-column about-part'>
+			<img class='icon-size' src='res/images/trophy.png' alt='Trophy'>
+			<p>Certyfikat księgowy</p>
+			<p>Posiadamy certyfikat księgowy do prowadzenia działalności usługowej w 
+			zakresie prowadzenia ksiąg rachunkowych</p>
 		</div>
-
-		<div class="contact-form">
-			<form action="send_message.php" method="post">
-
-				<label for="name">Imię i nazwisko</label>
-				<input type="text" id="name" name="name" placeholder="imię i nazwisko" required>
-
-				<label for="email">Email</label>
-				<input type="text" id="email" name="email" placeholder="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"	required>
-				<label for="subject">Wiadomość</label>
-				<textarea id="subject" name="subject" placeholder="Wiadomość..." required></textarea>
-				<input type="submit" value="Submit">
-
-			</form>
+		<div class='flex-item flex-column about-part'>
+			<img class='icon-size' src='res/images/insurance.png' alt='Insurance'>
+			<p>Ubezpieczenie OC</p>
+			<p>Dbamy o Twoje bezpieczeństwo dlatego zawsze korzystamy z ubezpieczenia OC
+			działalności gospodarczej</p>
 		</div>
 	</div>
 	
-	<div id="partners" class="part-div">
-		<h1>NASI PARTNERZY</h1>
-		<a href="@[http://www.nieruchomosci-barczynska.pl](http://www.nieruchomosci-barczynska.pl)">
-			<img class="partners-logo" src="LOGO_Barczynska.jpg" title="Nieruchomości Barczyński" alt="Nieruchomości Barczyński">
-		</a>
-		<a href="@[http://platinumsquare.pl](http://platinumsquare.pl)">
-			<img class="partners-logo" src="LOGO_Platinum.jpg" title="Platinum Square" alt="Platinum Square">
-		</a>
+	<div id="offer" class="viewport-height">
+		<h1 class="h1-middle">OFERTA</h1>
+		<ol class="offer-list">
+			<li>Prowadzenie podatkowej książki przychodów i rozchodów</li>
+			<li>Prowadzenie ryczałtu ewidencjonowanego</li>
+			<li>Prowadzenie karty podatkowej</li>
+			<li>Prowadzenie ewidencji podatkowych VAT, w tym wystawianie w imieniu klientów faktur sprzedaży</li>
+			<li>Prowadzenie spraw kadrowych</li>
+			<li>Sporządzanie list płac</li>
+			<li>Sporządzanie deklaracji i zeznań podatkowych</li>
+			<li>Prowadzenie rozliczeń z ZUS</li>
+			<li>Prowadzenie ewidencji środków trwałych oraz WNiP</li>
+			<li>Prowadzenie ewidencji wyposażenia</li>
+			<li>Wsparcie w zakładaniu działalności gospodarczej</li>
+			<li>Przegląd należności i zobowiązań</li>
+			<li>Reprezentowanie przed urzędami skarbowymi i ZUS</li>
+			<li>Rozliczenia PIT</li>
+			<li>Uczestniczenie w kontrolach podatkowych</li>
+		</ol>
+	</div>
+	
+	<div id="prices" class="viewport-height">
+		<h1 class="h1-middle">CENNIK</h1>
+		<div class="prices-gray center-text">
+			<p>Przedstawione ceny mają charakter poglądowy.</p>
+			<p>Ceny ustalamy indywidualnie z każdym klientem.</p>
+		</div>
+		<img class="icon-size prices-icon" src='res/images/cash.png' alt='Handshake'>
+		<p class="prices-info">Prowadzenie ewidencji podatkowych:</p>
+		<div class="flex-container prices-div justified-spaces">
+			<div class='flex-item'>
+				<p>do 10<br/> dokumentów</p>
+				<div class="prices-square">
+					<p>100 zł</p>
+				</div>
+			</div>
+			<div class='flex-item'>
+				<p>11-25<br/> dokumentów</p>
+				<div class="prices-square">
+					<p>150 zł</p>
+				</div>
+			</div>
+			<div class='flex-item'>
+				<p>26-50<br/> dokumentów</p>
+				<div class="prices-square">
+					<p>200 zł</p>
+				</div>
+			</div>
+			<div class='flex-item'>
+				<p>51-75<br/> dokumentów</p>
+				<div class="prices-square">
+					<p>250 zł</p>
+				</div>
+			</div>
+			<div class='flex-item'>
+				<p>ponad 75<br/> dokumentów</p>
+				<div class="prices-square">
+					<p class="prices-last prices-square-last">ustalenia indywidualne</p>
+				</div>
+			</div>
+		</div>
+
+		<img class="icon-size prices-icon" src='res/images/employee.png' alt='Handshake'>
+		<p class="prices-info">Usługi kadrowe:</p>
+		<div class="flex-container justified-center prices-div">
+			<div class='flex-item'>
+				<p>1 pracownik</p>
+				<div class="prices-square">
+					<p>30 zł</p>
+				</div>
+			</div>
+			<div class='flex-item'>
+				<p>Ryczałt</p>
+				<div class="prices-square">
+					<p>100 zł</p>
+				</div>
+			</div>
+			<div class='flex-item'>
+				<p>Rejestr VAT</p>
+				<div class="prices-square">
+					<p>100 zł</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
-	<script src="scripts.js"></script>
+
+<div id="contact" class="viewport-height center-text">
+	<div class="panorama">
+		<div class="panorama-text">
+			<p>Znajdziesz nas we Wrocławiu</p>
+			<h1>Jak możemy Ci pomóc?</h1>
+		</div>
+	</div>
+		
+	<div class="global-width flex-column">	
+		<div class="flex-container justified-spaces contact-details">
+			<div class='flex-item'>
+				<img class="icon-size" src='res/images/gps.png' alt='Handshake'>
+				<p>ul. Johanna Straussa 5<br/>52-129 Wrocław</p>
+			</div>
+			<div class='flex-item'>
+				<img class="icon-size" src='res/images/mail.png' alt='Handshake'>
+				<p>rafal.kiedzierski@gmail.com</p>
+			</div>
+			<div class='flex-item'>
+				<img class="icon-size" src='res/images/purchase.png' alt='Handshake'>
+				<p>605 417 823<br/>698 497 088</p>
+			</div>
+		</div>
+	
+		<div id="contact-form">
+			<h1 class="h1-middle">Napisz do nas</h1>
+			<form action="send_message.php" method="post">
+				<input type="text" id="name" name="name" placeholder="Imię i nazwisko" maxlength=40 required>
+				<input type="email" id="email" name="email" placeholder="E-mail" required>
+				<textarea id="subject" name="subject" placeholder="Wpisz tutaj swoją wiadomość" required></textarea>
+				<button type='submit' id='submit' disabled>WYŚLIJ</button>
+			</form>
+		</div>
+	</div>
+</div>
+	
+<!-- <div id="partners" class="viewport-height">
+		<h1>NASI PARTNERZY</h1>
+		<a href="http://www.nieruchomosci-barczynska.pl">
+			<img class="partners-logo" src="res/images/LOGO_Barczynska.jpg" title="Nieruchomości Barczyński" alt="Nieruchomości Barczyński">
+		</a>
+		<a href="http://platinumsquare.pl">
+			<img class="partners-logo" src="res/images/LOGO_Platinum.jpg" title="Platinum Square" alt="Platinum Square">
+		</a>
+</div> -->
+<div class="footer"></div>
+	<script src="res/scripts.js"></script>
 </body>
 </html>
