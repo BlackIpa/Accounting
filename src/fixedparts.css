@@ -1,35 +1,28 @@
-/* Background photo part  styling */
 .welcome {
 	padding: 0;
 	background: url("../res/images/lamp.jpeg") no-repeat center;
 	width: 100%;
 	background-size: cover;
 	height: 100vh;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
 }
 .welcome-text {
-	position: relative;
+	padding-right: 15%;
 	text-align: center;
-	top: 40%;
-	left: 25%;
 }
-.welcome-text p {
-	color: white;
-}
+.welcome-text p { color: white; }
 .welcome-text p:first-child {
-	font-weight: bold;
-	font-size: 2em;
+font-weight: bold;
+font-size: 1.9em;
 }
-.welcome-text p:nth-child(3) {
-	font-size: 2.1em;
-}
+.welcome-text p:nth-child(3) { font-size: 2em; }
 .welcome-text hr {
-	color: white;
+	border-color: white;
 	width: 21.875em;
 }
-/* Navbar styling */
-.nav-width {
-	width: 100%;
-}
+.nav-width { width: 100%; }
 .nav-container {
 	position: fixed;
 	z-index: 1000;
@@ -64,17 +57,12 @@
 	-moz-transition: all 1s;
 	transition: all 1s;
 }
-.nav-on-scroll {
-	background-color: rgba(52, 179, 222, 0.8);
-}
-.a-on-scroll {
-	color: white;
-}
+.nav-on-scroll { background-color: rgba(52, 179, 222, 0.8); }
+.a-on-scroll { color: white; }
 .active {
 	background-color: white;
 	color: rgb(52, 179, 222);
 }
-/* Call us on smaller screens and back to top button styling */
 .call-us {
 	display: none;
 	margin: 0;

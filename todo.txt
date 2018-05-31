@@ -1,0 +1,46 @@
+Laptop
+Navbar:
+Menu nieprzeŸroczyste
+O firmie:
+troche ni¿ej
+dopisac cos do pierwszego kwadratu
+kropki
+Oferta:
+tutu³ troche wy¿ej
+obni¿yæ liste i trochê powiêkszyæ
+Zawijaj¹cy tekst wyjustowany do tekstu przy numerze(nie mo¿e wchodziæ pod numer)
+Cennik:
+obni¿yæ o po³owê wysokoœci obrazka obie czêœci cennika
+Kontakt:
+odtworzyæ proporcje przerw miêdzy informacjami kontaktowymi a innymi elementami
+zachowaæ proporcje ikon tak jak w projekcie
+Napisz do nas nie mo¿e wchodziæ na stronê z informacjami kontaktowymi
+W formularzu zmniejszyæ czcionke i rozjaœniæ jej kolor
+wyœrodkowaæ ca³y formularz(margines u do³u i góry taki sam)
+
+Tablet
+Kontakt
+Zmienjszyæ proporcjonalnie panorame
+
+600px
+O firmie:
+mniejsze czcionki i ikony
+wiêkszy padding left right
+Oferta:
+wiêkszy padding left right
+
+480px
+O firmie:
+tekst odrobine wê¿szy
+odstepy miêdzy elementami wiêksze
+Kontakt:
+Przerwy miêdzy elementami wiêksze
+Mail od ikony za daleko od samego maila
+
+320px
+O firmie:
+mniejsze odstêpy miêdzy tekstami w obrêbie jednego elementu
+Cennik:
+Prowadzenie ewidencji ENTER podatkowych
+Kontakt:
+mniejsze odstêpy miêdzy tekstem a ikon¹

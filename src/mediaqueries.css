@@ -1,4 +1,55 @@
-/* Media styling */
-@media (min-width: 320px) {
-	
+@media only screen and (max-width: 429px) {
+.prices-div {margin: 2em 10%; }
+}
+@media only screen and (max-width: 479px) {
+.prices-div .flex-item > p { font-size: .9em; }
+.prices-square { font-size: 1.3em; }
+}
+@media only screen and (max-width: 479px) {
+.contact-details .flex-item {width: 80%;}
+.vertical-center { line-height: auto; }
+.offer-list li { font-size: 1.05em;}
+}
+@media only screen and (max-width: 599px) {
+body { font-size: 12px; }
+.welcome-text {padding-right: 5%; }
+.about-part {
+width: 70%;
+height: auto;
+padding-top: 2em;
+font-size: 1.2em;
+}
+.about-part:nth-of-type(1) { padding-top: 4em; }
+.contact-details .flex-item {
+width: 80%;
+padding-top: 2em;
+}
+.h1-middle { margin-top: 2em;}
+form input, form textarea {
+width: 98%;
+font-size: 1.3em;
+}
+}
+@media only screen and (min-width: 600px) {
+body { font-size: 13px; }
+form input, form textarea, form button { font-size: 1.2em; }
+.welcome-text {padding-right: 10%;}
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+prices-div .flex-item > p {font-size: .9em; }
+.prices-square { font-size: 1.45em; }
+.offer-list li { line-height: 1.9; }
+}
+@media only screen and (max-width: 768px) {
+.welcome-text p:first-child { font-size: 1.5em; }
+.welcome-text p:nth-child(3) { font-size: 1.5em; }
+.welcome-text hr { width: 16.4em; }
+.prices-div .flex-item { margin: 0 .3em; }
+}
+@media only screen and (min-width: 769px) {
+body { font-size: 16px; }
+.welcome-text { padding-right: 15%; }
+}
+@media only screen and (min-width: 769px) and (max-width: 880px) {
+.prices-square { font-size: 1.7em; }
 }
