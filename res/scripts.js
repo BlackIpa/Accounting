@@ -1,16 +1,19 @@
 // set main background size to window height
-function resize() {
-var windowHeight = window.innerHeight;
-if (windowHeight > 1300) {
-$('.welcome').height('1300px');
-} else {
-$('.welcome').height(window.innerHeight);
+
+function calcVH() {
+	let vH = window.innerHeight;
+	let welcome = document.querySelector(".welcome")
+	if (window.innerHeight > 1300) {
+		welcome.setAttribute("style", "height:1300px;");
+	} else {	
+		welcome.setAttribute("style", "height:" + vH + "px;");
+		document.querySelector(".call-us").setAttribute("style", "top:" + vH*0.4 + "px;");
+	};
 };
-};
-resize();
-window.onresize = function() {
-resize();
-};
+calcVH();
+window.addEventListener('orientationchange', () => setTimeout(calcVH,200), true);
+
+
 // Scroll to top
 $('.back-to-top').click(function() {
 $('body,html').animate({
