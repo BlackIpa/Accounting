@@ -1,6 +1,0 @@
-na ma³ym urz¹dzeniu:
-- tytu³ trochê w lewo przesun¹æ
-- obrazek lampy trochê rzeskakuje rpzy pierwszym przesuniêciu
-- na moim telefonie po przesuniêciu na kontakt czasem sie zacina na sekundê
-- na moim telefonie po przesuniêciu na kontakt w pasku zaznacza siê cennik
-- na Kfasa iphone5 po przesuniêciu na coœ z paska nawigacji zaznacza siê inna czêœæ

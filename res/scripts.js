@@ -95,3 +95,32 @@ $(this).removeClass("active");
 };
 });
 };
+
+$(function () {
+	$('#contactform').on('submit', function (e) {
+		console.log('been here');
+		e.preventDefault();
+		
+		$.ajax({
+			type: 'post',
+			url: 'res/send_message.php',
+			data: $('#contactform').serialize(),
+			success: function() {
+				messageSend();
+			}
+		});
+	});
+});
+
+function messageSend(){
+	const formTitle = document.getElementById("form-title");
+	let node = document.createElement("div")
+	let textnode = document.createTextNode("Wiadomość wysłana");
+	node.className = 'message-send';
+	node.appendChild(textnode);
+	formTitle.appendChild(node);
+	document.querySelector('#contactform').reset();
+	setTimeout(function() {
+    formTitle.removeChild(node);
+	}, 5000);
+};

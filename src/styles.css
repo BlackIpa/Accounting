@@ -84,7 +84,7 @@ font-size: 1.9em;
 }
 .nav-a {
 	display: block;
-	color: rgb(52, 179, 222);
+	color: #34b3de;
 	text-align: center;
 	padding: 0.7rem;
 	text-decoration: none;
@@ -92,11 +92,11 @@ font-size: 1.9em;
 	-moz-transition: all 1s;
 	transition: all 1s;
 }
-.nav-on-scroll { background-color: rgb(52, 179, 222); }
+.nav-on-scroll { background-color: #34b3de; }
 .a-on-scroll { color: white; }
 .active {
 	background-color: white;
-	color: rgb(52, 179, 222);
+	color: #34b3de;
 }
 .call-us {
 	display: none;
@@ -173,7 +173,7 @@ font-size: 1.9em;
 	counter-increment: item;
 	list-style-type: none;
 	line-height: 2.1;
-	border-bottom: 1px solid rgb(217, 217, 219);
+	border-bottom: 1px solid #d9d9db;
 	padding-left: 2em;
 	text-indent: -2em;
 }
@@ -256,7 +256,7 @@ form {
 	width: 80%;
 }
 form input, form textarea, form button {
-	color: rgb(130, 130, 130);
+	color: #828282;
 	font-family: 'Roboto', sans-serif!important;
 }
 form input {
@@ -354,4 +354,15 @@ body { font-size: 16px; }
 }
 @media only screen and (min-width: 769px) and (max-width: 991px) {
 .panorama {	height: 15em; }
+}
+
+.message-send {
+	margin: auto;
+	margin-top: 1.5em;
+	background: #88D5EF;
+	color: #0483AD;
+	border-radius: 3px;
+	text-align: center;
+	width: 50%;
+	font-size: .6em;
 }
