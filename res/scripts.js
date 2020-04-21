@@ -98,7 +98,6 @@ $(this).removeClass("active");
 
 $(function () {
 	$('#contactform').on('submit', function (e) {
-		console.log('been here');
 		e.preventDefault();
 		
 		$.ajax({
@@ -124,3 +123,18 @@ function messageSend(){
     formTitle.removeChild(node);
 	}, 5000);
 };
+
+$(document).ready(function () {
+const cons = document.getElementById('consent-click');
+const show = document.getElementById('consent-show');
+cons.addEventListener('click', function () {
+	show.classList.toggle('invisible');
+});
+show.addEventListener('click', function () {
+	show.classList.toggle('invisible');
+});
+});
+
+function hasClass(element, className) {
+    return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
+}

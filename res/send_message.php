@@ -4,7 +4,7 @@
 		$subject 	= "Email wysłany ze strony internetowej";
 		$mailFrom = $_POST["email"];
 		$message 	= $_POST["message"];
-		$mailTo 	= "augustyniak.p@gmail.com";
+		$mailTo 	= "rafal.kiedzierski@gmail.com";
 		$headers 	= "From: " . $mailFrom . "\r\n";
 		$txt = "Otrzymałeś wiadomość od " . $name . ".\n\n" . $message;
 		mail($mailTo, $subject, $txt, $headers);
